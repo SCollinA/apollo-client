@@ -132,6 +132,8 @@ By setting the `pollInterval` to 500, you'll fetch the current breed's image fro
 
 > You can also start and stop polling dynamically with the `startPolling` and `stopPolling` functions that are returned by the [`useQuery` hook](https://www.apollographql.com/docs/react/api/react/hooks/#usequery).
 
+> Note: Polling **is not** available when `ssrMode` set to `true` for Apollo Client.
+
 ### Refetching
 
 Refetching enables you to refresh query results in response to a particular user
